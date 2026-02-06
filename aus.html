@@ -40,17 +40,6 @@
       z-index: 9999;
     }
 
-    const question = document.getElementById("question");
-
-yesBtn.addEventListener("click", () => {
-  question.style.display = "none";   // 👈 זה החסר
-  zone.style.display = "none";
-  hint.style.display = "none";
-  result.style.display = "block";
-  resizeConfettiCanvas();
-  fullScreenConfetti();
-})
-
     .card {
       width: min(720px, 92vw);
       padding: 26px 22px;
@@ -182,7 +171,7 @@ yesBtn.addEventListener("click", () => {
             fill="#ff7aa2"/>
     </svg>
 
-    <h1 id="question">שיר חייםםם האם את מאשרת לי לטוס לאוסטרליה?</h1>
+    <h1>שיר חייםםם האם את מאשרת לי לטוס לאוסטרליה?</h1>
 
     <section class="button-zone" id="zone">
       <button id="yesBtn">ברור</button>
@@ -311,6 +300,7 @@ yesBtn.addEventListener("click", () => {
   </script>
 </body>
 </html>
+
 
 
 
